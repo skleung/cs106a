@@ -13,7 +13,6 @@
     <![endif]-->
   </head>
   <body class=" hasGoogleVoiceExt">
-    
 <!-- navbar starts here -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -27,13 +26,12 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            
+
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Sections <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="week1.html">Week 1</a></li>
                 <li><a href="week2.html">Week 2</a></li>
-                <li><a href="week3.html">Week 3</a></li>
-               
               </ul>
             </li>
 
@@ -46,7 +44,7 @@
             <li>
               <a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/">CS106A Java Library</a>
             </li>
-            
+
           </ul>
         </div>
       </div>
@@ -59,15 +57,16 @@
 
         <div class="row">
           <div class="col-lg-8 col-md-7 col-sm-6">
-            <h2>Week 2 <small>7/3/2014</small></h2>
+            <h2>Week 2 <small>7/9/2015</small></h2>
             <h3>Agenda</h3>
             <ul class="lead">
-              <li>Introductions/Icebreakers</li>
-              <li><a href="http://web.stanford.edu/~skleung/cs106a-sum14/section/H00.pdf">Section Syllabus</a></li>
-              <li>Time for questions</li>
-              <li>Section Problems</li>
+              <li>Guessing Game</li>
+              <li>Optical Illusion</li>
+              <li><a href="../tangents/tangent2.html">Tangent #1</a></li>
+              <a href="#" id="tangent-explaination-toggle" style="font-size: 16px">(What are tangents?)</a>
+              <p id="tangent-explanation" style="display:none; font-size: 16px">Tangents are my best attempt to imitate a favorite professor of mine that always left us with a <a href="http://www.quora.com/What-are-the-most-profound-life-lessons-from-Stanford-Professor-John-Ousterhout">"Thought for the weekend"</a>. He would present interesting observations and deliver practical kernels of knowledge that I always appreciated and found different from the content in other classes. Though we might not always have time to get to these tangents, I'm going to leave them up on this site so you guys can get more out of this section than just what we learn in this class.</p>
             </ul>
-            <p class="lead"> We'll be revisiting Karel today and writing a neat little <i>ConsoleProgram</i> to print out the Fibonacci sequence.</p>
+            <p class="lead"> We'll be getting comfortable with functionality in the <i>ConsoleProgram</i> and the <a href="http://cs.stanford.edu/people/eroberts/jtf/javadoc/student/index.html">Stanford Java Graphics</a> module!</p>
 
           </div>
         </div>
@@ -84,9 +83,9 @@
         </div>
       </div>
 
-     
 
-  <!--    
+
+  <!--
       <footer>
         <div class="row">
           <div class="col-lg-12">
@@ -115,5 +114,9 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootswatch.js"></script>
-  
+<script>
+      $("#tangent-explaination-toggle").click(function(){
+        $("#tangent-explanation").slideToggle("fast");
+      });
+    </script>
 </body></html>
